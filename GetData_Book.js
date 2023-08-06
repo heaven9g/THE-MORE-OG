@@ -1,7 +1,7 @@
-let booknor_text1 = "Booknlife 5000won (KR)\" data-op=\"";
-let bookdis_text1 = "Booknlife 5000won (KR) Discount Promo\" data-op=\"";
-let bookdis_text2 = "\" data-price=\""
-let bookend_text = "\" data-image=\"\" class=\"products-modal-items-wrapper product-group group\""
+let nor_text1 = "Booknlife 5000won (KR)\" data-op=\"";
+let dis_text1 = "Booknlife 5000won (KR) Discount Promo\" data-op=\"";
+let dis_text2 = "\" data-price=\""
+let end_text = "\" data-image=\"\" class=\"products-modal-items-wrapper product-group group\""
 
 var data_dis = [["",0,0,0]];
 var data_nor = [["",0,0,0]];
@@ -152,7 +152,7 @@ for (let i = 0; i < res_dis.length; i++) {
   str += "</tr>"
 }
 
-document.getElementsByClassName("responsive-table__body")[2].innerHTML = str;
+document.getElementsByClassName("responsive-table__body")[0].innerHTML = str;
 
 str = "";
 now = 1;
@@ -171,4 +171,4 @@ for (let i = 0; i < res_nor.length; i++) {
   str += "</tr>"
 }
 
-document.getElementsByClassName("responsive-table__body")[3].innerHTML = str;
+document.getElementsByClassName("responsive-table__body")[1].innerHTML = str;
