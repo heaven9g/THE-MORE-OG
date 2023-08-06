@@ -19,7 +19,7 @@
 	 font-family: "Poppins", sans-serif;
 	 color: #141a4e;
 	 background-color: #f2f6f9;
-	 font-size: 1.6rem;
+	 font-size: 1.2rem;
 }
 /* Page Wrapper/Container Style */
  .container {
@@ -43,14 +43,9 @@
 	 border-bottom: 1px solid #edeef2;
 	 padding: 0 1.5rem;
 }
- @media (min-width: 768px) {
+ @media (min-width: 200px) {
 	 .responsive-table__row {
 		 grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
-	}
-}
- @media (min-width: 768px) and (max-width: 991px) {
-	 .responsive-table__row {
-		 grid-template-columns: 1fr 1fr 1fr;
 	}
 }
  .responsive-table__row th, .responsive-table__row td {
@@ -58,12 +53,7 @@
 }
  .responsive-table__head {
 	 background-color: #e1e8f2;
-}
- @media (max-width: 991px) {
-	 .responsive-table__head {
-		 display: none;
-	}
-}
+ }
  .responsive-table__head__title {
 	 display: flex;
 	 align-items: center;
@@ -91,45 +81,8 @@
 	 font-weight: 600;
 	 text-transform: capitalize;
 }
- @media (max-width: 991px) {
-	 .responsive-table__body__text::before {
-		 content: attr(data-title) " :";
-	}
-}
- @media (max-width: 400px) {
-	 .responsive-table__body__text::before {
-		 width: 100%;
-		 margin-bottom: 1rem;
-	}
-}
  .responsive-table__body__text--name {
 	 font-weight: 600;
-}
- @media (min-width: 768px) {
-	 .responsive-table__body__text--name::before {
-		 display: none;
-	}
-}
- @media (min-width: 768px) and (max-width: 991px) {
-	 .responsive-table__body__text--name {
-		 grid-column: 0.5;
-		 flex-direction: column;
-	}
-}
- @media (min-width: 768px) and (max-width: 991px) {
-	 .responsive-table__body__text--rank, .responsive-table__body__text--types, .responsive-table__body__text--update {
-		 grid-column: 0.6666666667;
-	}
-}
- @media (min-width: 768px) and (max-width: 991px) {
-	 .responsive-table__body__text--country {
-		 grid-column: -3;
-	}
-}
- @media (min-width: 768px) and (max-width: 991px) {
-	 .responsive-table__body__text--name, .responsive-table__body__text--country {
-		 grid-row: 2;
-	}
 }
 /* SVG Up Arrow Style */
  .up-arrow {
@@ -164,7 +117,7 @@
 }
 #title {
     display: flex;
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
     display: block;
 }
