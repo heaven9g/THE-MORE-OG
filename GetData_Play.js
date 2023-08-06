@@ -1,5 +1,5 @@
-let nor_text1 = "Happy Money 5,000WON Gift Card (KR)\" data-op=\"";
-let dis_text1 = "Happy Money 5,000WON Gift Card (KR) Discount Promo\" data-op=\"";
+let nor_text1 = "Google Play 5,000WON Gift Card (KR)\" data-op=\"";
+let dis_text1 = "Google Play 5,000WON Gift Card (KR) Discount Promo\" data-op=\"";
 let dis_text2 = "\" data-price=\""
 let end_text = "\" data-image=\"\" class=\"products-modal-items-wrapper product-group group\""
 
@@ -7,7 +7,7 @@ var data_dis = [["",0,0,0,""]];
 
 for (let i = 0; i < money.length; i++) {
     $.ajax({
-          url: proxy + "https://www.offgamers.com/kr/en/happy-money-gift-card/happy-money-gift-card-kr/happy-money-5000won-gift-card-kr-discount-promo?reg_cur=" + money[i],
+          url: proxy + "https://www.offgamers.com/kr/ko/google-play-gift-card/google-play-gift-card-kr/google-play-5000won-gift-card-kr?reg_cur=" + money[i],
           type: "post",
           crossDomain: true,
           async: false,
